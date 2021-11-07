@@ -17,7 +17,7 @@ add_action('init', function () {
     defined( 'WP_GUTENBERG_BLOCKS_JS_HANDLE' ) || define('WP_GUTENBERG_BLOCKS_JS_HANDLE', 'blocks-js');
     $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php' );
 
-    wp_register_script('blocks-js',
+    wp_enqueue_script(WP_GUTENBERG_BLOCKS_JS_HANDLE,
         plugins_url( 'build/index.js', __FILE__ ),
         $asset_file['dependencies'],
         $asset_file['version']
