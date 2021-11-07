@@ -1,0 +1,33 @@
+{
+  "name": "wp-gutenberg-blocks-plugin",
+  "version": "1.0.0",
+  "description": "Boilerplate code for custom Gutenberg blocks plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrenda91/wp-gutenberg-blocks-plugin.git"
+  },
+  "keywords": [
+    "wordpress",
+    "gutenberg",
+    "blocks"
+  ],
+  "author": "Luigi Renda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lrenda91/wp-gutenberg-blocks-plugin/issues"
+  },
+  "homepage": "https://github.com/lrenda91/wp-gutenberg-blocks-plugin#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^19.0.0"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^7.0.4",
+    "@wordpress/blocks": "^11.1.2",
+    "@wordpress/components": "^19.0.0",
+    "@wordpress/i18n": "^4.2.3"
+  }
+}
