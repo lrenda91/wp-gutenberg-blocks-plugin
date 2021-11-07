@@ -4,15 +4,14 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { Component } from 'react';
 
-registerBlockType("wp-gutenberg-examples/dynamic-label", {
-    apiVersion: 2,
-    title: "Dynamic label",
-    category: "layout",
-    icon: "universal-access-alt",
-    textdomain: "wp-gutenberg-blocks",
-    attributes: {
-        text: { type: 'string' }
-    },
+import json from '../block';
+
+const { name, ...settings } = json;
+
+// Register the block
+registerBlockType(name, {
+    settings,
+
     edit: class extends Component  {
         constructor(props) {
             super(props);
@@ -34,11 +33,7 @@ registerBlockType("wp-gutenberg-examples/dynamic-label", {
             )
         }
     },
-    save: (props) => {
-        return (
-            <>
-                <div><p>Text is: "{props.attributes.text}"</p></div>
-            </>
-        )
+    save: () => {
+        return null;
     }
 });

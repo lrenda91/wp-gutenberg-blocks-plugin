@@ -4,8 +4,7 @@
   "description": "Boilerplate code for custom Gutenberg blocks plugin",
   "main": "index.js",
   "scripts": {
-    "build": "wp-scripts build",
-    "start": "wp-scripts start"
+    "build": "node build-all.js"
   },
   "repository": {
     "type": "git",
@@ -24,11 +23,5 @@
   "homepage": "https://github.com/lrenda91/wp-gutenberg-blocks-plugin#readme",
   "devDependencies": {
     "@wordpress/scripts": "^19.0.0"
-  },
-  "dependencies": {
-    "@wordpress/block-editor": "^7.0.4",
-    "@wordpress/blocks": "^11.1.2",
-    "@wordpress/components": "^19.0.0",
-    "@wordpress/i18n": "^4.2.3"
   }
 }

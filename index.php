@@ -14,18 +14,17 @@ defined( 'ABSPATH' ) || exit;
 
 add_action('init', function () {
 
-    defined( 'WP_GUTENBERG_BLOCKS_JS_HANDLE' ) || define('WP_GUTENBERG_BLOCKS_JS_HANDLE', 'blocks-js');
-    $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php' );
-
-    wp_enqueue_script(WP_GUTENBERG_BLOCKS_JS_HANDLE,
-        plugins_url( 'build/index.js', __FILE__ ),
-        $asset_file['dependencies'],
-        $asset_file['version']
-    );
-
     if ( ! function_exists( 'register_block_type' ) ) {
         // Gutenberg is not active.
         return;
     }
 
+    /*
+     * Load blocks
+     */
+    include 'blocks/01-dynamic-label/index.php';
+    include 'blocks/02-attrs-server-side-rendering/index.php';
+
 });
+
+

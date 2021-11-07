@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "wp-gutenberg-examples/dynamic-label",
+  "title": "Dynamic label",
+  "category": "layout",
+  "icon": "universal-access-alt",
+  "textdomain": "wp-gutenberg-blocks",
+  "example": {},
+  "editorScript": "file:./build/index.js"
+}

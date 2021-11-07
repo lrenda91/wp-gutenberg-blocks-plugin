@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "wp-gutenberg-examples/dynamic-label-2",
+  "title": "Dynamic label with render_callback",
+  "category": "layout",
+  "icon": "universal-access-alt",
+  "textdomain": "wp-gutenberg-blocks",
+  "attributes": {
+    "text": { "type": "string" }
+  },
+  "example": {
+    "attributes": {
+      "text": "Sample text"
+    }
+  },
+  "editorScript": "file:./build/index.js"
+}

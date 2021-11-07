@@ -1,0 +1,29 @@
+{
+  "name": "02-dynamic-label",
+  "version": "1.0.0",
+  "description": "Example: pure JSX Dynamic label",
+  "author": "The WordPress Contributors",
+  "keywords": [
+    "WordPress",
+    "block"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrenda91/wp-gutenberg-blocks-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lrenda91/wp-gutenberg-blocks-plugin/issues"
+  },
+  "homepage": "https://github.com/lrenda91/wp-gutenberg-blocks-plugin#readme",
+  "main": "build/index.js",
+  "devDependencies": {
+    "@wordpress/scripts": "^19.0.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "format:js": "wp-scripts format-js",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start"
+  }
+}
