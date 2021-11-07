@@ -6,6 +6,9 @@
   "category": "layout",
   "icon": "universal-access-alt",
   "textdomain": "wp-gutenberg-blocks",
+  "attributes": {
+    "text": { "type": "string" }
+  },
   "example": {},
   "editorScript": "file:./build/index.js"
 }
